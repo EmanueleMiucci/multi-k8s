@@ -19,3 +19,4 @@ after_success:
   - docker push emanuelemiucci/multi-nginx
   - docker push emanuelemiucci/multi-server
   - docker push emanuelemiucci/multi-worker
+
