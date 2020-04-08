@@ -23,9 +23,9 @@
             "essential": false
         },
         {
-            "name": "worker",
-            "image": "1kronos1/multi-worker",
-            "hostname": "worker",
+            "name": "nginx",
+            "image": "1kronos1/multi-nginx",
+            "hostname": "nginx",
             "memory": 128,
             "essential": true,
             "portMappings":[
