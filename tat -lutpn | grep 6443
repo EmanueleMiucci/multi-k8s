@@ -1,0 +1,1037 @@
+-- Logs begin at Sat 2020-04-11 10:20:48 CEST, end at Sat 2020-04-11 11:40:46 CEST. --
+Apr 11 11:38:55 dev-local kubelet[11945]: I0411 11:38:55.724392   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 0d2a894c6e5c89381a073e2b7e6b20206cf8b6e2c793104cf90cbadbb0adee1c
+Apr 11 11:38:55 dev-local kubelet[11945]: E0411 11:38:55.725459   11945 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:38:55 dev-local kubelet[11945]: E0411 11:38:55.798818   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:55 dev-local kubelet[11945]: E0411 11:38:55.885088   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:55 dev-local kubelet[11945]: E0411 11:38:55.900085   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:55 dev-local kubelet[11945]: E0411 11:38:55.944324   11945 controller.go:136] failed to ensure node lease exists, will retry in 6.4s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.001727   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: W0411 11:38:56.042776   11945 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.106734   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.207755   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.317799   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.418671   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: W0411 11:38:56.445722   11945 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.590186   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.690573   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.790912   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.841787   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.892199   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:56 dev-local kubelet[11945]: E0411 11:38:56.993274   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.095487   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.196236   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.297308   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.316170   11945 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.397675   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.498906   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.599540   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.700391   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.764802   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.813597   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:57 dev-local kubelet[11945]: E0411 11:38:57.913875   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.016026   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.116815   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.217469   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.317802   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.419413   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.520498   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.620835   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: I0411 11:38:58.644106   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:38:58 dev-local kubelet[11945]: I0411 11:38:58.647467   11945 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.648808   11945 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.722108   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.822739   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:58 dev-local kubelet[11945]: E0411 11:38:58.927920   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.030704   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.131412   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.231927   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.332447   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.434244   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: I0411 11:38:59.524695   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.528505   11945 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:59 dev-local kubelet[11945]: I0411 11:38:59.533377   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: cfc352dd9db3916dd4067a8b20b29e5f0fe8612bd7a69b03fb7319115b9df92b
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.534614   11945 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.536756   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.637481   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.741670   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.846633   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.945974   11945 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.948942   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:38:59 dev-local kubelet[11945]: E0411 11:38:59.966737   11945 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.049396   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.150289   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.251643   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.352480   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.452756   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.558447   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.661155   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.762109   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.862634   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:00 dev-local kubelet[11945]: E0411 11:39:00.964105   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.080077   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.093422   11945 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.183615   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.284292   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: I0411 11:39:01.381227   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.384598   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: I0411 11:39:01.385317   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: b063d7699a1dbf4713172376d88b2b552d36e2e660834c020d024a520d7dab55
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.485758   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.585975   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.686252   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.787078   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:01 dev-local kubelet[11945]: E0411 11:39:01.905562   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.010963   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.123506   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.224041   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.325006   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: I0411 11:39:02.326491   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:02 dev-local kubelet[11945]: I0411 11:39:02.327178   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:02 dev-local kubelet[11945]: I0411 11:39:02.331154   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: b063d7699a1dbf4713172376d88b2b552d36e2e660834c020d024a520d7dab55
+Apr 11 11:39:02 dev-local kubelet[11945]: I0411 11:39:02.331635   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: ad269e761a8ea5170cff4f7f50bf9f5599506e8ca159c859b37299392a506601
+Apr 11 11:39:02 dev-local kubelet[11945]: W0411 11:39:02.332152   11945 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.332221   11945 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 20s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.345323   11945 controller.go:136] failed to ensure node lease exists, will retry in 7s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.425600   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.527943   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.633134   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.734783   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.835227   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:02 dev-local kubelet[11945]: E0411 11:39:02.936109   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.036935   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.143209   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.175443   11945 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.243862   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.344075   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.445134   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.546846   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.647998   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.748753   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.849899   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:03 dev-local kubelet[11945]: E0411 11:39:03.950830   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.052153   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.152978   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.266684   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.367108   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.467830   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.569181   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.671518   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.778354   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.879724   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.902033   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:04 dev-local kubelet[11945]: E0411 11:39:04.981037   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: I0411 11:39:05.049958   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:05 dev-local kubelet[11945]: I0411 11:39:05.057659   11945 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.058579   11945 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.081851   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.183477   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.285491   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.385817   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.509827   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.610610   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.711973   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.813291   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:05 dev-local kubelet[11945]: E0411 11:39:05.914729   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.015966   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.123185   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.230576   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.295634   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.330897   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.431415   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.534948   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.551410   11945 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.646360   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.760506   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.761261   11945 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.783639   11945 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.861638   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:06 dev-local kubelet[11945]: E0411 11:39:06.972074   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.073335   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.200681   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.302265   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.403183   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.505260   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.617122   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.722864   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: I0411 11:39:07.794958   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:07 dev-local kubelet[11945]: I0411 11:39:07.802781   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 0d2a894c6e5c89381a073e2b7e6b20206cf8b6e2c793104cf90cbadbb0adee1c
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.823677   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:07 dev-local kubelet[11945]: E0411 11:39:07.927709   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.030928   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.135970   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.237412   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.340666   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.441341   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: I0411 11:39:08.450725   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:08 dev-local kubelet[11945]: I0411 11:39:08.451209   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:08 dev-local kubelet[11945]: I0411 11:39:08.453991   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 0d2a894c6e5c89381a073e2b7e6b20206cf8b6e2c793104cf90cbadbb0adee1c
+Apr 11 11:39:08 dev-local kubelet[11945]: I0411 11:39:08.454562   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 70ffbb7c5490783535e389141f363a6850ffddc38fa8e62b551e2c00f712d62e
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.455093   11945 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 20s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:08 dev-local kubelet[11945]: W0411 11:39:08.455512   11945 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.542710   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.643396   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.750893   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.851176   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:08 dev-local kubelet[11945]: E0411 11:39:08.954355   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.054720   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.165399   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.266167   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.348993   11945 controller.go:136] failed to ensure node lease exists, will retry in 7s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.366751   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.467634   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.567991   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.669106   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.771988   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.873707   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.967653   11945 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:09 dev-local kubelet[11945]: E0411 11:39:09.974198   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.074562   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.179188   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.303385   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.408881   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.516442   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.638669   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.738873   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.843253   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:10 dev-local kubelet[11945]: E0411 11:39:10.943907   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.045012   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.146178   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.247726   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.349261   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: I0411 11:39:11.385444   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:11 dev-local kubelet[11945]: I0411 11:39:11.396111   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: ad269e761a8ea5170cff4f7f50bf9f5599506e8ca159c859b37299392a506601
+Apr 11 11:39:11 dev-local kubelet[11945]: W0411 11:39:11.397211   11945 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.397751   11945 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 20s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.449721   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.550970   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.652415   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.757845   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.858848   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:11 dev-local kubelet[11945]: E0411 11:39:11.966693   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: I0411 11:39:12.059954   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.067853   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: I0411 11:39:12.068591   11945 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.069851   11945 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.168652   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.269868   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.370939   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.472479   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.580145   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:12 dev-local kubelet[11945]: E0411 11:39:12.915098   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.027631   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.129982   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.178377   11945 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.293198   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.412065   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.513470   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.634807   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.735562   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:13 dev-local kubelet[11945]: I0411 11:39:13.747155   11945 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:13 dev-local kubelet[11945]: I0411 11:39:13.756559   11945 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: cfc352dd9db3916dd4067a8b20b29e5f0fe8612bd7a69b03fb7319115b9df92b
+Apr 11 11:39:13 dev-local kubelet[11945]: E0411 11:39:13.838405   11945 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:22 dev-local systemd[1]: [1;39mkubelet.service: main process exited, code=exited, status=255/n/a[0m
+Apr 11 11:39:22 dev-local systemd[1]: [1;39mUnit kubelet.service entered failed state.[0m
+Apr 11 11:39:22 dev-local systemd[1]: [1;39mkubelet.service failed.[0m
+Apr 11 11:39:23 dev-local systemd[1]: kubelet.service holdoff time over, scheduling restart.
+Apr 11 11:39:23 dev-local systemd[1]: Stopped kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished shutting down.
+Apr 11 11:39:23 dev-local systemd[1]: Started kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished starting up.
+-- 
+-- The start-up result is done.
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.453746   12576 kubelet.go:1845] skipping pod synchronization - [container runtime status check may not have completed yet, PLEG is not healthy: pleg has yet to be successful]
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.466594   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.493106   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.496378   12576 container.go:412] Failed to create summary reader for "/system.slice/kubelet.service": none of the resources are being tracked.
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.498390   12576 container.go:412] Failed to create summary reader for "/system.slice/docker.service": none of the resources are being tracked.
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.503181   12576 controller.go:136] failed to ensure node lease exists, will retry in 400ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.563544   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.588367   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.597771   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599163   12576 cpu_manager.go:184] [cpumanager] starting with none policy
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599180   12576 cpu_manager.go:185] [cpumanager] reconciling every 10s
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599205   12576 state_mem.go:36] [cpumanager] initializing new in-memory state store
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599558   12576 state_mem.go:88] [cpumanager] updated default cpuset: ""
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599573   12576 state_mem.go:96] [cpumanager] updated cpuset assignments: "map[]"
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.599588   12576 policy_none.go:43] [cpumanager] none policy: Start
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.601299   12576 plugin_manager.go:114] Starting Kubelet Plugin Manager
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603593   12576 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603604   12576 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603671   12576 container_manager_linux.go:912] CPUAccounting not enabled for pid: 12576
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603678   12576 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 12576
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603715   12576 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603720   12576 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603763   12576 container_manager_linux.go:912] CPUAccounting not enabled for pid: 12576
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.603768   12576 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 12576
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.603921   12576 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.654217   12576 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.656543   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.660501   12576 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.661414   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.665141   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.668835   12576 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.670819   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.672141   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.675585   12576 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.676175   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.679490   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.682506   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.683068   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.686908   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.690023   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.698109   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708053   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-usr-share-ca-certificates") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708122   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-ca-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708151   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-etc-pki") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708177   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "flexvolume-dir" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-flexvolume-dir") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708200   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-k8s-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708227   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/5795d0c442cb997ff93c49feeb9f6386-kubeconfig") pod "kube-scheduler-dev-local" (UID: "5795d0c442cb997ff93c49feeb9f6386")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708251   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-certs" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-certs") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708273   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-data" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-data") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708305   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-k8s-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708332   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-kubeconfig") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708360   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-usr-share-ca-certificates") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708390   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-ca-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.708413   12576 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-etc-pki") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.762900   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.764539   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.767746   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.803605   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.905086   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:24 dev-local kubelet[12576]: E0411 11:39:24.905640   12576 controller.go:136] failed to ensure node lease exists, will retry in 800ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:24 dev-local kubelet[12576]: W0411 11:39:24.963057   12576 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.964681   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 37a326b27394b8652a2a6184bf643f5562f8e34aba3ca465f0a9ea879e4c3d36
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.975236   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 70ffbb7c5490783535e389141f363a6850ffddc38fa8e62b551e2c00f712d62e
+Apr 11 11:39:24 dev-local kubelet[12576]: I0411 11:39:24.984962   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: d385cb376b444e264d8489f3f315e3287a61ebb7c8da8f69a0e5f0f8eb63e431
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.010405   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.111850   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.162978   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.212093   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: W0411 11:39:25.301583   12576 container.go:526] Failed to update stats for container "/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-826ee0adee5cff47b141c5dd1f4cac2f4336c35338a56479721ca4988edbb10c.scope": failed to parse memory.usage_in_bytes - read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-826ee0adee5cff47b141c5dd1f4cac2f4336c35338a56479721ca4988edbb10c.scope/memory.usage_in_bytes: no such device, continuing to push stats
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.319592   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.445941   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.549825   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: I0411 11:39:25.575853   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.580095   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:25 dev-local kubelet[12576]: I0411 11:39:25.613733   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:25 dev-local kubelet[12576]: I0411 11:39:25.621692   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.651221   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: I0411 11:39:25.667471   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.709296   12576 controller.go:136] failed to ensure node lease exists, will retry in 1.6s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.751299   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: W0411 11:39:25.763303   12576 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.851682   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:25 dev-local kubelet[12576]: E0411 11:39:25.952249   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.052861   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.153516   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.162904   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.253851   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.355818   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: W0411 11:39:26.362624   12576 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.456912   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.558448   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.562585   12576 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.658917   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.682949   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.683333   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.690161   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 6c7966ecfa8b445ee68bda33a54d7332c7eb305ad2a1816d2fe8b22914be606d
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.690667   12576 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.690820   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 70ffbb7c5490783535e389141f363a6850ffddc38fa8e62b551e2c00f712d62e
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.704701   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.705071   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.705274   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.711867   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 826ee0adee5cff47b141c5dd1f4cac2f4336c35338a56479721ca4988edbb10c
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.712342   12576 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.723313   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 37a326b27394b8652a2a6184bf643f5562f8e34aba3ca465f0a9ea879e4c3d36
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.760425   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.861601   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: E0411 11:39:26.963478   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.964973   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:26 dev-local kubelet[12576]: W0411 11:39:26.969042   12576 status_manager.go:556] Failed to get status for pod "kube-scheduler-dev-local_kube-system(5795d0c442cb997ff93c49feeb9f6386)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-scheduler-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:26 dev-local kubelet[12576]: I0411 11:39:26.971672   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.064607   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.167111   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.168150   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.268890   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.310346   12576 controller.go:136] failed to ensure node lease exists, will retry in 3.2s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.363942   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.369521   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.470196   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.565390   12576 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.570706   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.671136   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.716040   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.716485   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.720101   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: d385cb376b444e264d8489f3f315e3287a61ebb7c8da8f69a0e5f0f8eb63e431
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.720949   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 75f55fd9e23aa435251b264cf8434b178e6a229d83bc713537f1e8391fa8f518
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.721332   12576 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.726131   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.730847   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 6c7966ecfa8b445ee68bda33a54d7332c7eb305ad2a1816d2fe8b22914be606d
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.731349   12576 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.739708   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:27 dev-local kubelet[12576]: I0411 11:39:27.743243   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 826ee0adee5cff47b141c5dd1f4cac2f4336c35338a56479721ca4988edbb10c
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.743754   12576 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:27 dev-local kubelet[12576]: W0411 11:39:27.766996   12576 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.771273   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.873134   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.963116   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:27 dev-local kubelet[12576]: E0411 11:39:27.973593   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.075140   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: I0411 11:39:28.162729   12576 request.go:621] Throttling request took 1.141713185s, request: GET:https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.163321   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.175346   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.276191   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.363598   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.377480   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.478621   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: W0411 11:39:28.563518   12576 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.579425   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.679755   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.781431   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.882428   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:28 dev-local kubelet[12576]: W0411 11:39:28.968179   12576 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:28 dev-local kubelet[12576]: E0411 11:39:28.988906   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.093660   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.194368   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.294775   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.327905   12576 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:39:29 dev-local kubelet[12576]: W0411 11:39:29.362866   12576 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.395410   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.495647   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: I0411 11:39:29.568496   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:29 dev-local kubelet[12576]: I0411 11:39:29.573472   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.596997   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.697741   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: W0411 11:39:29.763022   12576 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.798115   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.898254   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.963143   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:29 dev-local kubelet[12576]: E0411 11:39:29.999058   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.101675   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: W0411 11:39:30.166378   12576 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.206933   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.307861   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.363270   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.410407   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.511867   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.512321   12576 controller.go:136] failed to ensure node lease exists, will retry in 6.4s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:30 dev-local kubelet[12576]: W0411 11:39:30.566309   12576 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.616899   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.720716   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.822939   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:30 dev-local kubelet[12576]: E0411 11:39:30.924558   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.025326   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.128595   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.232714   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.334258   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: I0411 11:39:31.426422   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.427908   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.435161   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: I0411 11:39:31.438074   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 6c7966ecfa8b445ee68bda33a54d7332c7eb305ad2a1816d2fe8b22914be606d
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.440004   12576 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.536104   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.637211   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.737308   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.810173   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.843611   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:31 dev-local kubelet[12576]: E0411 11:39:31.951632   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.052107   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.152562   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.257604   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.374713   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.400146   12576 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.482376   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.583571   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.595622   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.684004   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.933258   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:32 dev-local kubelet[12576]: E0411 11:39:32.970312   12576 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.035354   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.135900   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: I0411 11:39:33.163355   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:33 dev-local kubelet[12576]: I0411 11:39:33.166880   12576 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.168374   12576 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.200807   12576 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.236640   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.337259   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.437625   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.538364   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.638887   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.741483   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.842352   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:33 dev-local kubelet[12576]: E0411 11:39:33.944335   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.045653   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.146615   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.248651   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: I0411 11:39:34.270821   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:34 dev-local kubelet[12576]: I0411 11:39:34.275586   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 75f55fd9e23aa435251b264cf8434b178e6a229d83bc713537f1e8391fa8f518
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.276360   12576 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:39:34 dev-local kubelet[12576]: W0411 11:39:34.276966   12576 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.349339   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.452278   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.552479   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.605116   12576 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.663033   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.763930   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.864902   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:34 dev-local kubelet[12576]: I0411 11:39:34.911023   12576 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:34 dev-local kubelet[12576]: I0411 11:39:34.918793   12576 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 826ee0adee5cff47b141c5dd1f4cac2f4336c35338a56479721ca4988edbb10c
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.920097   12576 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:34 dev-local kubelet[12576]: E0411 11:39:34.965149   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.032221   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.065998   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.166726   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.267066   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.367487   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.468298   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.568658   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.669958   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.771116   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.871774   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:35 dev-local kubelet[12576]: E0411 11:39:35.972455   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:36 dev-local kubelet[12576]: E0411 11:39:36.073635   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:54 dev-local kubelet[12576]: E0411 11:39:54.559408   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:54 dev-local kubelet[12576]: E0411 11:39:54.614605   12576 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:54 dev-local kubelet[12576]: E0411 11:39:54.661376   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:54 dev-local kubelet[12576]: E0411 11:39:54.789432   12576 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:54 dev-local kubelet[12576]: E0411 11:39:54.827618   12576 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:54 dev-local kubelet[12576]: F0411 11:39:54.827689   12576 csi_plugin.go:285] Failed to initialize CSINodeInfo after retrying
+Apr 11 11:39:54 dev-local systemd[1]: [1;39mkubelet.service: main process exited, code=exited, status=255/n/a[0m
+Apr 11 11:39:54 dev-local systemd[1]: [1;39mUnit kubelet.service entered failed state.[0m
+Apr 11 11:39:54 dev-local systemd[1]: [1;39mkubelet.service failed.[0m
+Apr 11 11:39:55 dev-local systemd[1]: kubelet.service holdoff time over, scheduling restart.
+Apr 11 11:39:55 dev-local systemd[1]: Stopped kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished shutting down.
+Apr 11 11:39:55 dev-local systemd[1]: Started kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished starting up.
+-- 
+-- The start-up result is done.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --authorization-mode has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --client-ca-file has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --cluster-domain has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --fail-swap-on has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --pod-manifest-path has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --authorization-mode has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --client-ca-file has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --cluster-domain has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --fail-swap-on has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: Flag --pod-manifest-path has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.736166   13096 server.go:417] Version: v1.18.0
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.737812   13096 plugins.go:100] No cloud provider specified.
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.737853   13096 server.go:837] Client rotation is on, will bootstrap in background
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.745166   13096 certificate_store.go:130] Loading cert/key pair from "/var/lib/kubelet/pki/kubelet-client-current.pem".
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.746551   13096 container_manager_linux.go:912] CPUAccounting not enabled for pid: 13096
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.746654   13096 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 13096
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.747137   13096 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.747144   13096 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842077   13096 server.go:646] --cgroups-per-qos enabled, but --cgroup-root was not specified.  defaulting to /
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842557   13096 container_manager_linux.go:266] container manager verified user specified cgroup-root exists: []
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842589   13096 container_manager_linux.go:271] Creating Container Manager object based on Node Config: {RuntimeCgroupsName: SystemCgroupsName: KubeletCgroupsName: ContainerRuntime:docker CgroupsPerQOS:true CgroupRoot:/ CgroupDriver:systemd KubeletRootDir:/var/lib/kubelet ProtectKernelDefaults:false NodeAllocatableConfig:{KubeReservedCgroupName: SystemReservedCgroupName: ReservedSystemCPUs: EnforceNodeAllocatable:map[pods:{}] KubeReserved:map[] SystemReserved:map[] HardEvictionThresholds:[]} QOSReserved:map[] ExperimentalCPUManagerPolicy:none ExperimentalCPUManagerReconcilePeriod:10s ExperimentalPodPidsLimit:-1 EnforceCPULimits:true CPUCFSQuotaPeriod:100ms ExperimentalTopologyManagerPolicy:none}
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842728   13096 topology_manager.go:126] [topologymanager] Creating topology manager with none policy
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842740   13096 container_manager_linux.go:301] [topologymanager] Initializing Topology Manager with none policy
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842745   13096 container_manager_linux.go:306] Creating device plugin manager: true
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842833   13096 client.go:75] Connecting to docker on unix:///var/run/docker.sock
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.842848   13096 client.go:92] Start docker client with request timeout=2m0s
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.845703   13096 docker_service.go:561] Hairpin mode set to "promiscuous-bridge" but kubenet is not enabled, falling back to "hairpin-veth"
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.845729   13096 docker_service.go:238] Hairpin mode set to "hairpin-veth"
+Apr 11 11:39:55 dev-local kubelet[13096]: W0411 11:39:55.845852   13096 cni.go:237] Unable to update cni config: no networks found in /etc/cni/net.d
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.859974   13096 docker_service.go:253] Docker cri networking managed by kubernetes.io/no-op
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.902864   13096 docker_service.go:258] Docker Info: &{ID:QRFR:PB4B:OOFZ:JELO:SPZY:4PET:NZOQ:MXLD:3DCQ:TKH6:626E:IF4P Containers:19 ContainersRunning:5 ContainersPaused:0 ContainersStopped:14 Images:87 Driver:overlay2 DriverStatus:[[Backing Filesystem xfs] [Supports d_type true] [Native Overlay Diff true]] SystemStatus:[] Plugins:{Volume:[local] Network:[bridge host macvlan null overlay] Authorization:[] Log:[]} MemoryLimit:true SwapLimit:true KernelMemory:true KernelMemoryTCP:false CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:false IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6tables:true Debug:false NFd:45 OomKillDisable:true NGoroutines:46 SystemTime:2020-04-11T11:39:55.889477042+02:00 LoggingDriver:journald CgroupDriver:systemd NEventsListener:0 KernelVersion:3.10.0-957.10.1.el7.x86_64 OperatingSystem:CentOS Linux 7 (Core) OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:0xc000401e30 NCPU:2 MemTotal:1927315456 GenericResources:[] DockerRootDir:/var/lib/docker HTTPProxy: HTTPSProxy: NoProxy: Name:dev-local Labels:[] ExperimentalBuild:false ServerVersion:1.13.1 ClusterStore: ClusterAdvertise: Runtimes:map[docker-runc:{Path:/usr/libexec/docker/docker-runc-current Args:[]} runc:{Path:docker-runc Args:[]}] DefaultRuntime:docker-runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:[] Nodes:0 Managers:0 Cluster:0xc00049ba20 Warnings:[]} LiveRestoreEnabled:false Isolation: InitBinary:/usr/libexec/docker/docker-init-current ContainerdCommit:{ID: Expected:aa8187dbd3b7ad67d8e5e3a15115d3eef43a7ed1} RuncCommit:{ID:df5c38a9167e87f53a9894d77c0950e178a745e7 Expected:9df8b306d01f59d3a8029be411de015b7304dd8f} InitCommit:{ID:fec3683b971d9c3ef73f284f176672c44b448662 Expected:949e6facb77383876aeff8a6944dde66b3089574} SecurityOptions:[name=seccomp,profile=/etc/docker/seccomp.json name=selinux] ProductLicense: Warnings:[]}
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.902942   13096 docker_service.go:271] Setting cgroupDriver to systemd
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955198   13096 remote_runtime.go:59] parsed scheme: ""
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955216   13096 remote_runtime.go:59] scheme "" not registered, fallback to default scheme
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955246   13096 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955263   13096 clientconn.go:933] ClientConn switching balancer to "pick_first"
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955322   13096 remote_image.go:50] parsed scheme: ""
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955381   13096 remote_image.go:50] scheme "" not registered, fallback to default scheme
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955395   13096 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955402   13096 clientconn.go:933] ClientConn switching balancer to "pick_first"
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955458   13096 kubelet.go:292] Adding pod path: /etc/kubernetes/manifests
+Apr 11 11:39:55 dev-local kubelet[13096]: I0411 11:39:55.955493   13096 kubelet.go:317] Watching apiserver
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.969758   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.969804   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.969911   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.970179   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.972174   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:55 dev-local kubelet[13096]: E0411 11:39:55.972744   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.266933   13096 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Apr 11 11:39:56 dev-local kubelet[13096]: For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.271100   13096 kuberuntime_manager.go:211] Container runtime docker initialized, version: 1.13.1, apiVersion: 1.26.0
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.273135   13096 server.go:1125] Started kubelet
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.276272   13096 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.276605   13096 server.go:145] Starting to listen on 0.0.0.0:10250
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.282912   13096 server.go:393] Adding debug handlers to kubelet server.
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.291895   13096 fs_resource_analyzer.go:64] Starting FS ResourceAnalyzer
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.297045   13096 volume_manager.go:265] Starting Kubelet Volume Manager
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.298473   13096 desired_state_of_world_populator.go:139] Desired state populator starts to run
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.315565   13096 controller.go:136] failed to ensure node lease exists, will retry in 200ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.315662   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.319416   13096 status_manager.go:158] Starting to sync pod status with apiserver
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.319456   13096 kubelet.go:1821] Starting kubelet main sync loop.
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.319502   13096 kubelet.go:1845] skipping pod synchronization - [container runtime status check may not have completed yet, PLEG is not healthy: pleg has yet to be successful]
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.324225   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.324474   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.368535   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.398627   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.398720   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.401802   13096 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.420129   13096 kubelet.go:1845] skipping pod synchronization - container runtime status check may not have completed yet
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.430708   13096 container.go:412] Failed to create summary reader for "/system.slice/docker.service": none of the resources are being tracked.
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.486807   13096 container.go:412] Failed to create summary reader for "/system.slice/kubelet.service": none of the resources are being tracked.
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.499952   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.524070   13096 controller.go:136] failed to ensure node lease exists, will retry in 400ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.549981   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555380   13096 cpu_manager.go:184] [cpumanager] starting with none policy
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555401   13096 cpu_manager.go:185] [cpumanager] reconciling every 10s
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555446   13096 state_mem.go:36] [cpumanager] initializing new in-memory state store
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555609   13096 state_mem.go:88] [cpumanager] updated default cpuset: ""
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555617   13096 state_mem.go:96] [cpumanager] updated cpuset assignments: "map[]"
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.555629   13096 policy_none.go:43] [cpumanager] none policy: Start
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.557483   13096 plugin_manager.go:114] Starting Kubelet Plugin Manager
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.557948   13096 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.557957   13096 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.558040   13096 container_manager_linux.go:912] CPUAccounting not enabled for pid: 13096
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.558045   13096 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 13096
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.558179   13096 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.600292   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.621719   13096 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.628698   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.655233   13096 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.656539   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.666009   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.672335   13096 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.673413   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.676643   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.681139   13096 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.682004   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.684923   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.688844   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.689272   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.692675   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.701533   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.703721   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-kubeconfig") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.703802   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/5795d0c442cb997ff93c49feeb9f6386-kubeconfig") pod "kube-scheduler-dev-local" (UID: "5795d0c442cb997ff93c49feeb9f6386")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.703845   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-etc-pki") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.703882   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-k8s-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.703919   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-ca-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704034   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-k8s-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704079   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-usr-share-ca-certificates") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704250   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-certs" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-certs") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704341   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-data" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-data") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704386   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-ca-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704494   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-usr-share-ca-certificates") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704567   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-etc-pki") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.704617   13096 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "flexvolume-dir" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-flexvolume-dir") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.773957   13096 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.802979   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.903814   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:56 dev-local kubelet[13096]: E0411 11:39:56.927866   13096 controller.go:136] failed to ensure node lease exists, will retry in 800ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.971080   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: ad716591cea5f94859b41fa2e98f1269ec51c16e1b1c5424f75e4326c1a1f725
+Apr 11 11:39:56 dev-local kubelet[13096]: W0411 11:39:56.971407   13096 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.979499   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.989206   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: eca693d1dbf55d681487a9ff0bfb493517f7fb64e7548a0bc712024d3abb380e
+Apr 11 11:39:56 dev-local kubelet[13096]: I0411 11:39:56.990933   13096 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:57 dev-local kubelet[13096]: I0411 11:39:56.996001   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 1f85dddd0b927c314ada0057e552d923ea219a25b6721034c00261a6c9e25b2d
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.004946   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.105378   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.168509   13096 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.205850   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.262946   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.263009   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.memsw.limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.memsw.limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.263034   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.soft_limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.soft_limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.263186   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.263207   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.memsw.limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.memsw.limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.263227   13096 helpers.go:189] readString: Failed to read "/sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.soft_limit_in_bytes": read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.soft_limit_in_bytes: no such device
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.264262   13096 container.go:526] Failed to update stats for container "/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope": failed to parse memory.usage_in_bytes - read /sys/fs/cgroup/memory/kubepods.slice/kubepods-besteffort.slice/kubepods-besteffort-podfbf0d7499278a93ffc9777d721b1a047.slice/docker-e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739.scope/memory.usage_in_bytes: no such device, continuing to push stats
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.306166   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.369980   13096 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.423716   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: I0411 11:39:57.427538   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.532469   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.580309   13096 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.633268   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.733161   13096 controller.go:136] failed to ensure node lease exists, will retry in 1.6s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.733742   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.834318   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: E0411 11:39:57.935143   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:57 dev-local kubelet[13096]: W0411 11:39:57.969843   13096 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:57 dev-local kubelet[13096]: I0411 11:39:57.980630   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:57 dev-local kubelet[13096]: I0411 11:39:57.982943   13096 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.035488   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.138824   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.239280   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.340346   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: W0411 11:39:58.368817   13096 status_manager.go:556] Failed to get status for pod "kube-scheduler-dev-local_kube-system(5795d0c442cb997ff93c49feeb9f6386)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-scheduler-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.440741   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.441812   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.442128   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.448666   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: da8fe9b9a657d34fb3c8575304c25032eace8181f187b575de6a4dc861ccca3b
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.449108   13096 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.449248   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 1f85dddd0b927c314ada0057e552d923ea219a25b6721034c00261a6c9e25b2d
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.459475   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.459887   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.460095   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.465240   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.465529   13096 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:58 dev-local kubelet[13096]: I0411 11:39:58.474099   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: ad716591cea5f94859b41fa2e98f1269ec51c16e1b1c5424f75e4326c1a1f725
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.541872   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.568899   13096 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.642674   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.744113   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.845307   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:58 dev-local kubelet[13096]: E0411 11:39:58.946590   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.071192   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.071988   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.170270   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.172317   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.272849   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.335785   13096 controller.go:136] failed to ensure node lease exists, will retry in 3.2s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.389180   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.389567   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:59 dev-local kubelet[13096]: W0411 11:39:59.390657   13096 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.397311   13096 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.476754   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.481655   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: da8fe9b9a657d34fb3c8575304c25032eace8181f187b575de6a4dc861ccca3b
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.482152   13096 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.485381   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.489490   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.489806   13096 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.490760   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.500113   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.500425   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.505994   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: eca693d1dbf55d681487a9ff0bfb493517f7fb64e7548a0bc712024d3abb380e
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.506419   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: dd39e46ed7cb967edc6aa771faa44125dbed92bbd4cdd54595c96e81adc68759
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.507034   13096 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.586368   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.590973   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.691507   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: I0411 11:39:59.768551   13096 request.go:621] Throttling request took 1.118730403s, request: GET:https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.769499   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.798144   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.899128   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:39:59 dev-local kubelet[13096]: E0411 11:39:59.970358   13096 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:39:59.999936   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.101201   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.180764   13096 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.201694   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.304139   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: W0411 11:40:00.370986   13096 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.404751   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.487123   13096 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.505033   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: I0411 11:40:00.517607   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:00 dev-local kubelet[13096]: I0411 11:40:00.521130   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: da8fe9b9a657d34fb3c8575304c25032eace8181f187b575de6a4dc861ccca3b
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.521828   13096 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:40:00 dev-local kubelet[13096]: I0411 11:40:00.527558   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:00 dev-local kubelet[13096]: I0411 11:40:00.531213   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: dd39e46ed7cb967edc6aa771faa44125dbed92bbd4cdd54595c96e81adc68759
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.531602   13096 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.574252   13096 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.626794   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.730234   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.831348   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: E0411 11:40:00.932005   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:00 dev-local kubelet[13096]: W0411 11:40:00.969433   13096 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.033427   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.133904   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.237504   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.342055   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: W0411 11:40:01.370090   13096 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.447627   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: I0411 11:40:01.510271   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:01 dev-local kubelet[13096]: I0411 11:40:01.524069   13096 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: e853de2a04f477143a48105b366a4c174e897f53fc593d6118102d36a4fe3739
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.525133   13096 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.552021   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.652705   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.753175   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: W0411 11:40:01.769737   13096 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.858863   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: E0411 11:40:01.959810   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:01 dev-local kubelet[13096]: W0411 11:40:01.970390   13096 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:02 dev-local kubelet[13096]: E0411 11:40:02.060920   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:02 dev-local kubelet[13096]: E0411 11:40:02.161981   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:24 dev-local kubelet[13096]: E0411 11:40:24.636005   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:24 dev-local kubelet[13096]: E0411 11:40:24.736563   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:24 dev-local kubelet[13096]: E0411 11:40:24.837079   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:24 dev-local kubelet[13096]: E0411 11:40:24.941608   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.042171   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.180652   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.282643   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.382998   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.483672   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.587639   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.692534   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.817455   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:25 dev-local kubelet[13096]: E0411 11:40:25.917736   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.031394   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.132254   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: I0411 11:40:26.206099   13096 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:26 dev-local kubelet[13096]: I0411 11:40:26.226018   13096 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.226779   13096 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.233397   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.334991   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.445549   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.546341   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.667595   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.667769   13096 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.798366   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:26 dev-local kubelet[13096]: E0411 11:40:26.899071   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.000058   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.101529   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.238977   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.344719   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.451773   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.553078   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.577322   13096 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.657010   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.766000   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.867410   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:27 dev-local kubelet[13096]: E0411 11:40:27.969949   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:28 dev-local kubelet[13096]: E0411 11:40:28.082404   13096 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:28 dev-local kubelet[13096]: E0411 11:40:28.179502   13096 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:28 dev-local kubelet[13096]: F0411 11:40:28.179565   13096 csi_plugin.go:285] Failed to initialize CSINodeInfo after retrying
+Apr 11 11:40:28 dev-local systemd[1]: [1;39mkubelet.service: main process exited, code=exited, status=255/n/a[0m
+Apr 11 11:40:28 dev-local systemd[1]: [1;39mUnit kubelet.service entered failed state.[0m
+Apr 11 11:40:28 dev-local systemd[1]: [1;39mkubelet.service failed.[0m
+Apr 11 11:40:29 dev-local systemd[1]: kubelet.service holdoff time over, scheduling restart.
+Apr 11 11:40:29 dev-local systemd[1]: Stopped kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished shutting down.
+Apr 11 11:40:29 dev-local systemd[1]: Started kubelet: The Kubernetes Node Agent.
+-- Subject: Unit kubelet.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit kubelet.service has finished starting up.
+-- 
+-- The start-up result is done.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --authorization-mode has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --client-ca-file has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --cluster-domain has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --fail-swap-on has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --pod-manifest-path has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --authorization-mode has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --cgroup-driver has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --client-ca-file has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --cluster-domain has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --fail-swap-on has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: Flag --pod-manifest-path has been deprecated, This parameter should be set via the config file specified by the Kubelet's --config flag. See https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/ for more information.
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.169301   13606 server.go:417] Version: v1.18.0
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.170696   13606 plugins.go:100] No cloud provider specified.
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.170726   13606 server.go:837] Client rotation is on, will bootstrap in background
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.178378   13606 certificate_store.go:130] Loading cert/key pair from "/var/lib/kubelet/pki/kubelet-client-current.pem".
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.179395   13606 container_manager_linux.go:912] CPUAccounting not enabled for pid: 13606
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.179492   13606 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 13606
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.180902   13606 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.180935   13606 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.279556   13606 server.go:646] --cgroups-per-qos enabled, but --cgroup-root was not specified.  defaulting to /
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280265   13606 container_manager_linux.go:266] container manager verified user specified cgroup-root exists: []
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280283   13606 container_manager_linux.go:271] Creating Container Manager object based on Node Config: {RuntimeCgroupsName: SystemCgroupsName: KubeletCgroupsName: ContainerRuntime:docker CgroupsPerQOS:true CgroupRoot:/ CgroupDriver:systemd KubeletRootDir:/var/lib/kubelet ProtectKernelDefaults:false NodeAllocatableConfig:{KubeReservedCgroupName: SystemReservedCgroupName: ReservedSystemCPUs: EnforceNodeAllocatable:map[pods:{}] KubeReserved:map[] SystemReserved:map[] HardEvictionThresholds:[]} QOSReserved:map[] ExperimentalCPUManagerPolicy:none ExperimentalCPUManagerReconcilePeriod:10s ExperimentalPodPidsLimit:-1 EnforceCPULimits:true CPUCFSQuotaPeriod:100ms ExperimentalTopologyManagerPolicy:none}
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280397   13606 topology_manager.go:126] [topologymanager] Creating topology manager with none policy
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280422   13606 container_manager_linux.go:301] [topologymanager] Initializing Topology Manager with none policy
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280428   13606 container_manager_linux.go:306] Creating device plugin manager: true
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280692   13606 client.go:75] Connecting to docker on unix:///var/run/docker.sock
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.280709   13606 client.go:92] Start docker client with request timeout=2m0s
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.287563   13606 docker_service.go:561] Hairpin mode set to "promiscuous-bridge" but kubenet is not enabled, falling back to "hairpin-veth"
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.287590   13606 docker_service.go:238] Hairpin mode set to "hairpin-veth"
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.287713   13606 cni.go:237] Unable to update cni config: no networks found in /etc/cni/net.d
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.305390   13606 docker_service.go:253] Docker cri networking managed by kubernetes.io/no-op
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.344045   13606 docker_service.go:258] Docker Info: &{ID:QRFR:PB4B:OOFZ:JELO:SPZY:4PET:NZOQ:MXLD:3DCQ:TKH6:626E:IF4P Containers:19 ContainersRunning:5 ContainersPaused:0 ContainersStopped:14 Images:87 Driver:overlay2 DriverStatus:[[Backing Filesystem xfs] [Supports d_type true] [Native Overlay Diff true]] SystemStatus:[] Plugins:{Volume:[local] Network:[bridge host macvlan null overlay] Authorization:[] Log:[]} MemoryLimit:true SwapLimit:true KernelMemory:true KernelMemoryTCP:false CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:false IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6tables:true Debug:false NFd:37 OomKillDisable:true NGoroutines:46 SystemTime:2020-04-11T11:40:29.334854079+02:00 LoggingDriver:journald CgroupDriver:systemd NEventsListener:0 KernelVersion:3.10.0-957.10.1.el7.x86_64 OperatingSystem:CentOS Linux 7 (Core) OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:0xc0007820e0 NCPU:2 MemTotal:1927315456 GenericResources:[] DockerRootDir:/var/lib/docker HTTPProxy: HTTPSProxy: NoProxy: Name:dev-local Labels:[] ExperimentalBuild:false ServerVersion:1.13.1 ClusterStore: ClusterAdvertise: Runtimes:map[docker-runc:{Path:/usr/libexec/docker/docker-runc-current Args:[]} runc:{Path:docker-runc Args:[]}] DefaultRuntime:docker-runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:[] Nodes:0 Managers:0 Cluster:0xc00054f080 Warnings:[]} LiveRestoreEnabled:false Isolation: InitBinary:/usr/libexec/docker/docker-init-current ContainerdCommit:{ID: Expected:aa8187dbd3b7ad67d8e5e3a15115d3eef43a7ed1} RuncCommit:{ID:df5c38a9167e87f53a9894d77c0950e178a745e7 Expected:9df8b306d01f59d3a8029be411de015b7304dd8f} InitCommit:{ID:fec3683b971d9c3ef73f284f176672c44b448662 Expected:949e6facb77383876aeff8a6944dde66b3089574} SecurityOptions:[name=seccomp,profile=/etc/docker/seccomp.json name=selinux] ProductLicense: Warnings:[]}
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.344221   13606 docker_service.go:271] Setting cgroupDriver to systemd
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389673   13606 remote_runtime.go:59] parsed scheme: ""
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389693   13606 remote_runtime.go:59] scheme "" not registered, fallback to default scheme
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389725   13606 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389743   13606 clientconn.go:933] ClientConn switching balancer to "pick_first"
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389792   13606 remote_image.go:50] parsed scheme: ""
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389798   13606 remote_image.go:50] scheme "" not registered, fallback to default scheme
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389811   13606 passthrough.go:48] ccResolverWrapper: sending update to cc: {[{/var/run/dockershim.sock  <nil> 0 <nil>}] <nil> <nil>}
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389822   13606 clientconn.go:933] ClientConn switching balancer to "pick_first"
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389856   13606 kubelet.go:292] Adding pod path: /etc/kubernetes/manifests
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.389888   13606 kubelet.go:317] Watching apiserver
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.399013   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.399494   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.399665   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.399727   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.408584   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.408676   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.662687   13606 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Apr 11 11:40:29 dev-local kubelet[13606]: For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.668903   13606 kuberuntime_manager.go:211] Container runtime docker initialized, version: 1.13.1, apiVersion: 1.26.0
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.671265   13606 server.go:1125] Started kubelet
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.673838   13606 event.go:269] Unable to write event: 'Post https://10.0.2.15:8443/api/v1/namespaces/default/events: dial tcp 10.0.2.15:8443: connect: connection refused' (may retry after sleeping)
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.676537   13606 fs_resource_analyzer.go:64] Starting FS ResourceAnalyzer
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.680941   13606 volume_manager.go:265] Starting Kubelet Volume Manager
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.685857   13606 desired_state_of_world_populator.go:139] Desired state populator starts to run
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.690549   13606 server.go:145] Starting to listen on 0.0.0.0:10250
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.691557   13606 server.go:393] Adding debug handlers to kubelet server.
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.694950   13606 controller.go:136] failed to ensure node lease exists, will retry in 200ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.695140   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.703923   13606 status_manager.go:158] Starting to sync pod status with apiserver
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.703974   13606 kubelet.go:1821] Starting kubelet main sync loop.
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.704022   13606 kubelet.go:1845] skipping pod synchronization - [container runtime status check may not have completed yet, PLEG is not healthy: pleg has yet to be successful]
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.708633   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.713895   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.781913   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.781998   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.785057   13606 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.801121   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.816234   13606 kubelet.go:1845] skipping pod synchronization - container runtime status check may not have completed yet
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.876804   13606 container.go:412] Failed to create summary reader for "/system.slice/kubelet.service": none of the resources are being tracked.
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.877127   13606 container.go:412] Failed to create summary reader for "/system.slice/docker.service": none of the resources are being tracked.
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.883951   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.899830   13606 controller.go:136] failed to ensure node lease exists, will retry in 400ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.958848   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965005   13606 cpu_manager.go:184] [cpumanager] starting with none policy
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965036   13606 cpu_manager.go:185] [cpumanager] reconciling every 10s
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965080   13606 state_mem.go:36] [cpumanager] initializing new in-memory state store
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965250   13606 state_mem.go:88] [cpumanager] updated default cpuset: ""
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965258   13606 state_mem.go:96] [cpumanager] updated cpuset assignments: "map[]"
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.965272   13606 policy_none.go:43] [cpumanager] none policy: Start
+Apr 11 11:40:29 dev-local kubelet[13606]: I0411 11:40:29.967176   13606 plugin_manager.go:114] Starting Kubelet Plugin Manager
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.967629   13606 container_manager_linux.go:912] CPUAccounting not enabled for pid: 3152
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.967685   13606 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 3152
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.967812   13606 container_manager_linux.go:912] CPUAccounting not enabled for pid: 13606
+Apr 11 11:40:29 dev-local kubelet[13606]: W0411 11:40:29.967818   13606 container_manager_linux.go:915] MemoryAccounting not enabled for pid: 13606
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.967954   13606 eviction_manager.go:255] eviction manager: failed to get summary stats: failed to get node info: node "dev-local" not found
+Apr 11 11:40:29 dev-local kubelet[13606]: E0411 11:40:29.985490   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.017188   13606 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.022932   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.035721   13606 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.036702   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.039484   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.054792   13606 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.055016   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.059926   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.065435   13606 topology_manager.go:233] [topologymanager] Topology Admit Handler
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.066262   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.068948   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.074653   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.075107   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.077493   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.080486   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.089124   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089283   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-certs" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-certs") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089372   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-etc-pki") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089443   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-k8s-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089498   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-pki" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-etc-pki") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089570   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "flexvolume-dir" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-flexvolume-dir") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089625   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-kubeconfig") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089680   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-usr-share-ca-certificates") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089735   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/5795d0c442cb997ff93c49feeb9f6386-kubeconfig") pod "kube-scheduler-dev-local" (UID: "5795d0c442cb997ff93c49feeb9f6386")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089792   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-data" (UniqueName: "kubernetes.io/host-path/fbf0d7499278a93ffc9777d721b1a047-etcd-data") pod "etcd-dev-local" (UID: "fbf0d7499278a93ffc9777d721b1a047")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089843   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-ca-certs") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.089897   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/0ccd972d39ce23597fbbb6f921884b30-usr-share-ca-certificates") pod "kube-apiserver-dev-local" (UID: "0ccd972d39ce23597fbbb6f921884b30")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.090160   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "ca-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-ca-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.090267   13606 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/88e6c47ce14900c76f81269925696e01-k8s-certs") pod "kube-controller-manager-dev-local" (UID: "88e6c47ce14900c76f81269925696e01")
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.190322   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.199056   13606 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.305157   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.317912   13606 controller.go:136] failed to ensure node lease exists, will retry in 800ms, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.370682   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: f01f8f9abde1d65ff80c0a7d71925e4829f212378876675143636d8182560329
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.372708   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 06283c92171ad714564bbaded96b890e681d353420e8cc766172f1658f53c349
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.382923   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: d7502e032e30266bb8ec88b2f3663361f65b166595b8843f3f3c0f6097ef0776
+Apr 11 11:40:30 dev-local kubelet[13606]: W0411 11:40:30.398784   13606 status_manager.go:556] Failed to get status for pod "kube-scheduler-dev-local_kube-system(5795d0c442cb997ff93c49feeb9f6386)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-scheduler-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.401495   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.404183   13606 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.405490   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.515840   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.604637   13606 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.618972   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.719877   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: W0411 11:40:30.802814   13606 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.844736   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.853275   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.858412   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 429308fad2ba7450a44be74bc2bfb417e15b5239d8db6e4a1b97509f7a82055c
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.858733   13606 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:40:30 dev-local kubelet[13606]: I0411 11:40:30.888520   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.948730   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:30 dev-local kubelet[13606]: E0411 11:40:30.998279   13606 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.048797   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.118776   13606 controller.go:136] failed to ensure node lease exists, will retry in 1.6s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.149344   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.250872   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.351356   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: W0411 11:40:31.397565   13606 status_manager.go:556] Failed to get status for pod "kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-apiserver-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.398812   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.401081   13606 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.451574   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.553238   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.597783   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:517: Failed to list *v1.Service: Get https://10.0.2.15:8443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.653854   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.754700   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.855272   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.921055   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.921587   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.926613   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: f5e161891d40e936e125755ec0c5635489f18eb1a5266065cc27f3c1bd568357
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.927131   13606 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.927987   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: d7502e032e30266bb8ec88b2f3663361f65b166595b8843f3f3c0f6097ef0776
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.935113   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.935624   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.942720   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 1709bd2623b4db31dc70942c66190b32bbc265e8d985f333edc065b72ebc4b3d
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.943312   13606 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.945445   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 06283c92171ad714564bbaded96b890e681d353420e8cc766172f1658f53c349
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.951978   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.952515   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.955784   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.959069   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 429308fad2ba7450a44be74bc2bfb417e15b5239d8db6e4a1b97509f7a82055c
+Apr 11 11:40:31 dev-local kubelet[13606]: E0411 11:40:31.959447   13606 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:40:31 dev-local kubelet[13606]: I0411 11:40:31.963465   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: f01f8f9abde1d65ff80c0a7d71925e4829f212378876675143636d8182560329
+Apr 11 11:40:31 dev-local kubelet[13606]: W0411 11:40:31.998481   13606 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.056104   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.159176   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.198167   13606 kubelet_node_status.go:92] Unable to register node "dev-local" with API server: Post https://10.0.2.15:8443/api/v1/nodes: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.260717   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.361136   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.399418   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1.CSIDriver: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csidrivers?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.462112   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.565938   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.666806   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.721096   13606 controller.go:136] failed to ensure node lease exists, will retry in 3.2s, error: Get https://10.0.2.15:8443/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/dev-local?timeout=10s: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.767519   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: W0411 11:40:32.798889   13606 status_manager.go:556] Failed to get status for pod "etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/etcd-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.868941   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.970173   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.972448   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.978357   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: f5e161891d40e936e125755ec0c5635489f18eb1a5266065cc27f3c1bd568357
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.978878   13606 pod_workers.go:191] Error syncing pod 88e6c47ce14900c76f81269925696e01 ("kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"), skipping: failed to "StartContainer" for "kube-controller-manager" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-controller-manager pod=kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)"
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.981916   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.985104   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 1709bd2623b4db31dc70942c66190b32bbc265e8d985f333edc065b72ebc4b3d
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.985602   13606 pod_workers.go:191] Error syncing pod 0ccd972d39ce23597fbbb6f921884b30 ("kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"), skipping: failed to "StartContainer" for "kube-apiserver" with CrashLoopBackOff: "back-off 10s restarting failed container=kube-apiserver pod=kube-apiserver-dev-local_kube-system(0ccd972d39ce23597fbbb6f921884b30)"
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.989629   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:32 dev-local kubelet[13606]: I0411 11:40:32.992914   13606 topology_manager.go:219] [topologymanager] RemoveContainer - Container ID: 429308fad2ba7450a44be74bc2bfb417e15b5239d8db6e4a1b97509f7a82055c
+Apr 11 11:40:32 dev-local kubelet[13606]: E0411 11:40:32.993750   13606 pod_workers.go:191] Error syncing pod fbf0d7499278a93ffc9777d721b1a047 ("etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"), skipping: failed to "StartContainer" for "etcd" with CrashLoopBackOff: "back-off 10s restarting failed container=etcd pod=etcd-dev-local_kube-system(fbf0d7499278a93ffc9777d721b1a047)"
+Apr 11 11:40:33 dev-local kubelet[13606]: I0411 11:40:32.999490   13606 kubelet_node_status.go:294] Setting node annotation to enable volume controller attach/detach
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.000201   13606 reflector.go:178] k8s.io/client-go/informers/factory.go:135: Failed to list *v1beta1.RuntimeClass: Get https://10.0.2.15:8443/apis/node.k8s.io/v1beta1/runtimeclasses?limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:33 dev-local kubelet[13606]: I0411 11:40:33.002335   13606 kubelet_node_status.go:70] Attempting to register node dev-local
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.070735   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.171411   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.199467   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/kubelet.go:526: Failed to list *v1.Node: Get https://10.0.2.15:8443/api/v1/nodes?fieldSelector=metadata.name%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.271855   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.373967   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.402520   13606 reflector.go:178] k8s.io/kubernetes/pkg/kubelet/config/apiserver.go:46: Failed to list *v1.Pod: Get https://10.0.2.15:8443/api/v1/pods?fieldSelector=spec.nodeName%3Ddev-local&limit=500&resourceVersion=0: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.475342   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.576287   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: W0411 11:40:33.598179   13606 status_manager.go:556] Failed to get status for pod "kube-controller-manager-dev-local_kube-system(88e6c47ce14900c76f81269925696e01)": Get https://10.0.2.15:8443/api/v1/namespaces/kube-system/pods/kube-controller-manager-dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.677444   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.783062   13606 kubelet.go:2267] node "dev-local" not found
+Apr 11 11:40:33 dev-local kubelet[13606]: E0411 11:40:33.800776   13606 csi_plugin.go:271] Failed to initialize CSINodeInfo: error updating CSINode annotation: timed out waiting for the condition; caused by: Get https://10.0.2.15:8443/apis/storage.k8s.io/v1/csinodes/dev-local: dial tcp 10.0.2.15:8443: connect: connection refused
